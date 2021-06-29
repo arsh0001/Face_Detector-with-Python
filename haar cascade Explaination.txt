@@ -1,0 +1,16 @@
+haar is the name of the guy
+looks at every square and when it gets the bottom, it knows its a face
+haar features a)edge features b)line features c)Forur rectangle features
+- they detect dark parts and light parts from face and judge parts of the face.eg usually forehead is brighter, eyes darker and cheeks are brighter
+positive images - Faces
+Negative Images - Non Faces
+Theres two fields of ML : supervised(humans teach it) and unsupervised (computer teaches itself)
+-> We wanna find the winning haar features
+-> We gotta test every haar features continously untl we find that the image is actually a face
+haar feature assigns parts of face numbers. it takes all pixels in black, adds it up in one number and it does the sqame with white pixels.
+after this minus black number and white number and we find out the difference. Now we give a threshold  eg if its 50 or higher, it matches for a face if not, its not a face
+we do it with other haar features as well
+-> "CASCADE" - we chain the winner haar features and collectively call them a cascade classifier
+OpenCV deos the hard work for us : provides all the pre trained classiffer  that have a chain of haar features which best match the frontal face.
+
+HAAR CASCADE VISUALIZATION - https://www.youtube.com/watch?v=hPCTwxF0qf4&ab_channel=AnkurDivekar
